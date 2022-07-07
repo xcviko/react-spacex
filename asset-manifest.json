@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f741d9a7.css",
+    "main.js": "./static/js/main.b55f0523.js",
+    "static/js/787.9c4e2313.chunk.js": "./static/js/787.9c4e2313.chunk.js",
+    "static/media/background.png": "./static/media/background.b8af062575f11481f456.png",
+    "static/media/MuseoSansCyrl.otf": "./static/media/MuseoSansCyrl.49e8040ce82e8b825551.otf",
+    "index.html": "./index.html",
+    "main.f741d9a7.css.map": "./static/css/main.f741d9a7.css.map",
+    "main.b55f0523.js.map": "./static/js/main.b55f0523.js.map",
+    "787.9c4e2313.chunk.js.map": "./static/js/787.9c4e2313.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f741d9a7.css",
+    "static/js/main.b55f0523.js"
+  ]
+}
