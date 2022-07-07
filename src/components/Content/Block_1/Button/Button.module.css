@@ -1,0 +1,67 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 35px;
+    border: 1px solid;
+    border-image: linear-gradient(to left top, transparent, #125CA1, #125CA1, transparent);
+    border-image-slice: 1;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 70px;
+    transition: 150ms;
+    background: #00000026;
+}
+
+.button:hover {
+    box-shadow: -1px 2px 44px -28px #3a3a3a inset;
+}
+
+.corner {
+    width: 4px;
+    height: 4px;
+    position: absolute;
+}
+
+.corner.tr {
+    border-left: none;
+    border-bottom: none;
+    top: 0;
+    right: 0;
+    transform: translate(1px, -1px);
+}
+.corner.bl {
+    border-right: none;
+    border-top: none;
+    bottom: 0;
+    left: 0;
+    transform: translate(-1px, 1px);
+}
+
+.corner.tr .t,
+.corner.bl .b {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    box-shadow: 0 -1px 2px 0.5px white
+}
+.corner.tr .r,
+.corner.bl .l {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    background: white;
+    box-shadow: 0 0 2px 0.5px white;
+}
+
+.corner.tr .t {top:0}
+.corner.tr .r {right:0}
+.corner.bl .b {bottom:0}
+.corner.bl .l {left: 0}

@@ -1,0 +1,12 @@
+.backgroundImage {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('../../../../assets/images/background.png') center center / cover;
+}
+
+/*
+tablets css in javascript: Content/Block_1/Background.jsx
+*/

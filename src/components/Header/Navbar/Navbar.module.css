@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    /*transition: 300ms;*/
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 0;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+}
+
+.item:hover {
+    color: azure;
+    border-bottom: 1px solid #3A3A3A;
+    transition: 150ms;
+}
+
+.toggleNavbarVisibility {
+    display: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ffffff36;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar {
+        flex-direction: column;
+        margin-top: 10px;
+        /*было лень делать анимашку через js, так что захардкодил 216px.
+        И так норм, но при переиспользовании нужно переделать на js, т.к элементы меню в будущем могут пополняться*/
+        max-height: 216px;
+    }
+    .item:hover {
+        border-bottom: 1px solid transparent;
+    }
+    .toggleNavbarVisibility {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    .disabled {
+        opacity: 0;
+        pointer-events: none;
+        max-height: 0;
+    }
+}

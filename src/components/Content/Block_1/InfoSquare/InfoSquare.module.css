@@ -1,0 +1,72 @@
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    transition: 150ms;
+    width: 185px;
+    height: 185px;
+    cursor: pointer;
+}
+
+.block:nth-child(1) {
+    box-shadow: -50px -75px 146px -179px rgba(247, 245, 245, 0.46) inset;
+    border-image: linear-gradient(to left top, rgba(255, 255, 255, 0.56) 10%, transparent 50%);
+}
+.block:nth-child(2) {
+    box-shadow: 50px -75px 146px -179px rgba(247, 245, 245, 0.46) inset;
+    border-image: linear-gradient(to right top, rgba(255, 255, 255, 0.56) 10%, transparent 50%);
+}
+.block:nth-child(3) {
+    box-shadow: -50px 75px 146px -179px rgba(247, 245, 245, 0.46) inset;
+    border-image: linear-gradient(to left bottom, rgba(255, 255, 255, 0.56) 10%, transparent 50%);
+}
+.block:nth-child(4) {
+    box-shadow: 50px 75px 146px -179px rgba(247, 245, 245, 0.46) inset;
+    border-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.56) 10%, transparent 50%);
+}
+
+.block:hover {border-image-slice: 1}
+
+.block:nth-child(1):hover {box-shadow: -50px -75px 146px -179px rgb(247, 244, 244) inset}
+.block:nth-child(2):hover {box-shadow: 50px -75px 146px -179px rgb(247, 244, 244) inset}
+.block:nth-child(3):hover {box-shadow: -50px 75px 146px -179px rgb(247, 244, 244) inset}
+.block:nth-child(4):hover {box-shadow: 50px 75px 146px -179px rgb(247, 244, 244) inset}
+
+.elem {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 60px;
+}
+.elem:first-child {
+    font-weight: 100;
+    font-size: 18px;
+}
+.elem:last-child {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/*
+phones
+*/
+@media screen and (max-width: 767px) {
+    .square {
+        gap: 5px;
+    }
+    .block {
+        width: 155px;
+        height: 155px;
+    }
+    .elem {
+        font-size: 45px;
+    }
+}

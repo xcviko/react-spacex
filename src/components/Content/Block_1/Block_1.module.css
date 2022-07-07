@@ -1,0 +1,107 @@
+.block_1 {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 135px;
+}
+
+.block_1 .block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.block_1 .block:nth-child(1) {
+    flex-direction: column;
+    position: relative;
+}
+.block_1 .block:nth-child(2) {
+    justify-content: right;
+}
+
+.mainText {
+    margin-top: 100px;
+    background-image: linear-gradient(62deg, #ffffff, #ed462f 68.49%, #ed462f);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.mainTextLarge {
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 700;
+}
+.mainTextDefault {
+    text-transform: lowercase;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.line {
+    display: flex;
+    justify-content: end;
+    transform: translate(-2px);
+}
+.line .main {
+    position: relative;
+    margin-top: 35px;
+    width: 350px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 1));
+}
+
+.line .curved {
+    position: absolute;
+    bottom: 28px;
+    right: 339px;
+    width: 88px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+    transform: rotate(40deg);
+}
+.line .circle {
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+/*
+tablets
+*/
+@media screen and (max-width: 1023px) {
+    .block_1 {
+        flex-direction: column;
+    }
+
+    .block_1 .block {
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .block_1 .block:last-child {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .line {
+        display: none;
+    }
+}
+
+
+/*
+phones
+*/
+@media screen and (max-width: 767px) {
+    .mainTextLarge {
+        font-size: 40px;
+    }
+
+    .mainTextDefault {
+        font-size: 20px;
+    }
+}
